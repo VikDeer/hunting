@@ -58,3 +58,7 @@ body{
 .freeze:active{
 	background-color: #7DD6B4;
 }
+.renewal{
+        margin-top:20px;
+        padding:2px;
+}
