@@ -18,7 +18,7 @@
 	<button class="button">Some button</button>
 	<button class="button">Some button</button>
 </div>
-<button class="reneval">ОБНОВИТЬ ПОЛЕ</button>
+<button class="renewal">ОБНОВИТЬ ПОЛЕ</button>
 	<script>
 let hunting = {
 	1: {
@@ -56,8 +56,8 @@ let buttons = document.querySelectorAll('.button');
 	button.classList.add(hunting[randomKey].class);
 }*/
 
-let renevalBtn = document.querySelector('.reneval');
-renevalBtn.onclick = function() { //когда нажата кнопка
+let renewalBtn = document.querySelector('.renewal');
+renewalBtn.onclick = function() { //когда нажата кнопка
 	for (i = 0; i < buttons.length; i++){
 	let button = buttons[i];
 	let randomKey = randomNum();
