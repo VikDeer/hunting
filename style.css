@@ -129,14 +129,6 @@ body {
    font-weight: bold;
 }
 
-/* анимация счета */
-
-.count-animation {
-   transition-property: color;
-   transition-duration: 3s;
-};
-
-
 /* адаптация */
 
 @media (max-width: 500px) {
