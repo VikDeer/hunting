@@ -1,0 +1,247 @@
+* {
+   padding: 0;
+   margin: 0;
+}
+
+body {
+   background-image: url(files/background.jpg);
+}
+
+.container {
+   width: 50%;
+   margin: 0 auto;
+   margin-top: 20px;
+   padding: 10px;
+
+   background-color: rgba(0, 0, 0, 0.3);
+   border-radius: 2px;
+}
+
+.field {
+   width: 90%;
+   margin: auto;
+   margin-top: 20px;
+   
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   gap: 5px;
+
+   position: relative;
+}
+
+.field .cage {
+   text-align: center;
+   font-size: 18px;
+   padding: 15px 0;
+
+   border-radius: 5px;
+
+   position: relative;
+}
+
+.field .cage .points {
+   position: absolute;
+   right: 2%;
+   top: 50%;
+   transform: translateY(-50%);
+
+   font-size: 300%;
+   font-weight: bolder;
+   color: white;
+
+   opacity: 50%;
+}
+
+
+.control {
+   width: 50%;
+   margin: auto;
+   margin-top: 30px;
+
+   display: grid;
+   grid-template-areas:
+      ". top ."
+      "left . right"
+      ". bottom .";
+}
+
+.control button {
+   padding: 10px 0;
+   font-size: 20px;
+}
+
+.control .right {
+   grid-area: right;
+}
+.control .left {
+   grid-area: left;
+}
+.control .top {
+   grid-area: top;
+}
+.control .bottom {
+   grid-area: bottom;
+}
+
+.score {
+   width: 90%;
+   margin: auto;
+
+   display: flex;
+   justify-content: space-between;
+
+   margin-top: 20px;
+}
+
+.count {
+   display: inline-block;
+
+   border: 2px #11560D solid;
+   border-radius: 2px;
+   background-color: #2D8428;
+   color: white;
+
+   padding: 10px;
+   font-size: 18px;
+   text-align: center;
+}
+
+.count .points {
+   font-size: 20px;
+   font-weight: bold;
+}
+
+.inventar {
+   display: inline-block;
+
+   border: 2px #11560D solid;
+   border-radius: 2px;
+   background-color: #2D8428;
+   color: white;
+
+   padding: 10px;
+   font-size: 18px;
+   text-align: center;
+}
+
+.inventar .points {
+   font-size: 20px;
+   font-weight: bold;
+}
+
+/* анимация счета */
+
+.count-animation {
+   transition-property: color;
+   transition-duration: 3s;
+};
+
+
+/* адаптация */
+
+@media (max-width: 500px) {
+
+.container {
+   width: 100%;
+   box-sizing: border-box;
+   margin-top: 0;
+   padding-top: 0;
+}
+
+.score {
+   width: 100%;
+   flex-direction: column;
+   gap: 5px;
+}
+.score .count,
+.score .inventar {
+   font-size: 12px;
+}
+.score .count .points,
+.score .inventar .points {
+   font-size: 16px;
+}
+
+.field {
+   width: 100%;
+}
+
+.field .cage {
+   max-width: 90px;
+   font-size: 12px;
+   white-space:normal;
+}
+
+.control {
+   width: 100%;
+}
+.control button {
+   font-size: 12px;
+}
+
+}
+
+
+/* список клеток */
+
+.cat {
+   border: 2px black solid;
+   background-color: #1C0700;
+   color: white;
+}
+
+.mouse {
+   border: 2px #A62A00 solid;
+   background-color: #D35D35;
+}
+.mouse:hover {
+   background-color: #E9A289;
+}
+
+.leaves {
+   border: 2px #476C0F solid;
+   background-color: #77A62E;
+}
+.leaves:hover {
+   background-color: #A5D360;
+}
+
+.grass {
+   border: 2px #5D3014 solid;
+   background-color: #8F5E3F;
+}
+.grass:hover {
+   background-color: #C79374;
+}
+
+.deadwood {
+   border: 2px #6A530D solid;
+   background-color: #A38528;
+}
+.deadwood:hover {
+   background-color: #D1B45B;
+}
+
+.ear {
+   border: 2px #4CA077 solid;
+   background-color: #94D0B3;
+}
+.ear:hover {
+   background-color: #C3E8D6;
+}
+
+.freeze {
+   border: 2px #5E9398 solid;
+   background-color: #A1C8CC;
+}
+.freeze:hover {
+   background-color: #CBE3E6;
+}
+
+.sneak {
+   border: 2px #509020 solid;
+   background-color: #97DD61;
+}
+.sneak:hover {
+   background-color: #B5EE8A;
+}
