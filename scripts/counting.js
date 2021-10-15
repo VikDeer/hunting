@@ -10,11 +10,13 @@ function countPoints() {
          
          if (stealthPoints > 0 && stealthPoints < 100) {
          elemSlealthPoints.textContent = stealthPoints;
+         hunting();
          loadCat();
          loadField();
       } else if (stealthPoints >= 100) {
          stealthPoints = 100;
          elemSlealthPoints.textContent = stealthPoints;
+         hunting();
          loadCat();
          loadField();
       } else {
