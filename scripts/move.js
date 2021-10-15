@@ -28,7 +28,6 @@ function moveTop() {
    } else {
       deleteCat();
       --catY;
-      hunting();
       countPoints();
    };
 };
@@ -39,7 +38,6 @@ function moveBottom() {
    } else {
       deleteCat();
       ++catY;
-      hunting();
       countPoints();
    };
 };
@@ -50,7 +48,6 @@ function moveLeft() {
    } else {
       deleteCat();
       --catX;
-      hunting();
       countPoints();
    };
 };
@@ -61,7 +58,6 @@ function moveRight() {
    } else {
       deleteCat();
       ++catX;
-      hunting();
       countPoints();
    };
 };
